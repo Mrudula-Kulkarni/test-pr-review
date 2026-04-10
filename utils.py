@@ -8,3 +8,4 @@ def get_user(users, index):
 def calculate_discount(price, discount):
     final = price - discount
     return final
+# test change
