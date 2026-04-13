@@ -5,3 +5,7 @@ def calculate_average(numbers):
 def get_user(conn, username):
     query = "SELECT * FROM users WHERE username = '" + username + "'"
     return conn.execute(query)  # SQL injection
+
+def read_config(path):
+    f = open(path, "r")
+    return f.read()  # file never closed
